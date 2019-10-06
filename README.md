@@ -7,7 +7,13 @@ Although texts are in public domain, we must thank those who digitalised and nor
 
 - [Heimskringla.no](https://heimskringla.no/wiki/Main_Page)
 
-## How to **norsecorpus**
+## Installation
+
+```bash
+$ pip install --user --upgrade norsecorpus
+```
+
+## How to use **norsecorpus**
 
 ```python
 import norsecorpus.reader as ncr
