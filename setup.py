@@ -15,7 +15,7 @@ import re
 import os
 from setuptools import find_packages, setup
 
-DEPENDENCIES = ["cltk"]
+DEPENDENCIES = ["nltk", "lxml"]
 EXCLUDE_FROM_PACKAGES = ["contrib", "docs", "tests*"]
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -25,10 +25,10 @@ with io.open(os.path.join(CURDIR, "README.md"), "r", encoding="utf-8") as f:
 
 setup(
     name="norsecorpus",
-    version="1.0.0",
+    version="1.0.1",
     author="Clément Besnier",
     author_email="clemsciences@aol.com",
-    description="",
+    description="Corpus of Old Norse texts with code to read them",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/clemsciences/old_norse_corpus",
@@ -37,7 +37,7 @@ setup(
     keywords=["old-norse", "corpus"],
     scripts=[],
     entry_points={"console_scripts": ["norsecorpus=norsecorpus.main:main"]},
-    zip_safe=False,
+    zip_safe=True,
     install_requires=DEPENDENCIES,
     test_suite="tests.test_project",
     python_requires=">=3.6",
@@ -45,9 +45,11 @@ setup(
     # https://pypi.org/pypi?%3Aaction=list_classifiers
     license="License :: OSI Approved :: MIT License",
     classifiers=[
-        "Programming Language :: Python",
-        # "Programming Language :: Python :: 3",
-        # "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: MIT License",
+        "Topic :: Text Processing",
+        "Topic :: Text Processing :: Markup :: XML"
         # "Private :: Do Not Upload"
     ],
 )
