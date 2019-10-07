@@ -25,7 +25,7 @@ with io.open(os.path.join(CURDIR, "README.md"), "r", encoding="utf-8") as f:
 
 setup(
     name="norsecorpus",
-    version="1.0.1",
+    version="1.0.2",
     author="Clément Besnier",
     author_email="clemsciences@aol.com",
     description="Corpus of Old Norse texts with code to read them",
