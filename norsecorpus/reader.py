@@ -5,7 +5,7 @@ Readers of texts
 import os
 import re
 from nltk.tokenize import sent_tokenize
-from nltk.tokenize import word_tokenize
+from cltk.tokenize.word import WordTokenizer
 from lxml import etree
 
 from norsecorpus import PACKDIR
@@ -13,6 +13,8 @@ from norsecorpus import PACKDIR
 __author__ = ["Clément Besnier <clemsciences@aol.com>", ]
 
 namespaces = {'n': 'http://www.tei-c.org/ns/1.0'}
+
+word_tokenizer = WordTokenizer("multilingual")
 
 
 def get_corresponding_data(text_name):
@@ -106,5 +108,5 @@ def read_tei_sentences(filename, path=""):
 
 def read_tei_words(filename, path=""):
     sentences = read_tei_sentences(filename, path)
-    words = [[[word_tokenize(sentence) for sentence in para] for para in chapter] for chapter in sentences]
+    words = [[[word_tokenizer.tokenize(sentence) for sentence in para] for para in chapter] for chapter in sentences]
     return words

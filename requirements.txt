@@ -1,2 +1,3 @@
+cltk
 nltk
 lxml
