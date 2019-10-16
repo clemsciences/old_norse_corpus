@@ -1,6 +1,6 @@
 # Corpus of Old Norse texts
 
-![PyPI](https://img.shields.io/pypi/v/norsecorpus) ![PyPI - License](https://img.shields.io/pypi/l/norsecorpus) 
+[![PyPI](https://img.shields.io/pypi/v/norsecorpus)](https://pypi.org/project/norsecorpus/) [![Build Status](https://travis-ci.org/clemsciences/old_norse_corpus.svg?branch=master)](https://travis-ci.org/clemsciences/old_norse_corpus) ![PyPI - License](https://img.shields.io/pypi/l/norsecorpus) 
 
 This package provides Old Norse texts with code to parse them.
 
