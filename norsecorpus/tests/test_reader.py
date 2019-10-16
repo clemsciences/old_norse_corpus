@@ -3,6 +3,8 @@
 """
 import os
 import unittest
+
+import nltk
 from lxml import etree
 
 import norsecorpus.reader as ncr
@@ -18,6 +20,7 @@ class TestMain(unittest.TestCase):
     def setUp(self) -> None:
         self.filename = "volsunga.xml"
         self.volsunga_path = os.path.join(PACKDIR, "data", "heimskringla", "Völsunga_saga", "tei")
+        nltk.download("punkt")
 
     def test_root(self):
         root = ncr.get_xml_root(self.filename, self.volsunga_path)
