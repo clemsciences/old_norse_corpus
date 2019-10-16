@@ -22,7 +22,7 @@ script:
   # Travis CI pre-installs `nose`
   # https://github.com/coagulant/coveralls-python#nosetests
   # http://nose.readthedocs.org/en/latest/plugins/skip.html
-- nosetests --no-skip --with-coverage --cover-package=runesdb --with-doctest --with-timer
+- nosetests --no-skip --with-coverage --cover-package=norsecorpus --with-doctest --with-timer
 
 after_success:
 - codecov
