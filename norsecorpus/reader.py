@@ -14,7 +14,7 @@ __author__ = ["Clément Besnier <clemsciences@aol.com>", ]
 
 namespaces = {'n': 'http://www.tei-c.org/ns/1.0'}
 
-word_tokenizer = WordTokenizer("multilingual")
+word_tokenizer = WordTokenizer("old_norse")
 
 
 def get_corresponding_data(text_name):
