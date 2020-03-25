@@ -21,7 +21,7 @@ $ pip install --user --upgrade norsecorpus
 import norsecorpus.reader as ncr
 available_texts = ncr.get_available_texts()
 filename = "volsunga.xml"
-volsunga = ncr.read_tei_words(available_texts["volsunga.xml"])
+volsunga = ncr.read_tei_words(available_texts[filename])
 ```
 
 You have now the Völsunga saga.
